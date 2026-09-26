@@ -1,0 +1,27 @@
+:root {
+  --black: #050505;
+  --black-soft: #0c0c0c;
+  --gray-dark: #181818;
+  --gray: #777777;
+  --gray-light: #cfcfcf;
+  --white: #f5f5f5;
+  --pure-white: #ffffff;
+  --ink-muted: #969696;
+  --line: rgba(245, 245, 245, 0.2);
+  --line-soft: rgba(245, 245, 245, 0.1);
+  --display: "Cormorant Garamond", Georgia, serif;
+  --body: "Source Serif 4", Georgia, serif;
+  --interface: "DM Mono", "Courier New", monospace;
+  --ease-cinematic: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-sharp: cubic-bezier(0.16, 1, 0.3, 1);
+  --max-width: 1400px;
+  --gutter: clamp(1.25rem, 4vw, 4.5rem);
+  --section-space: clamp(4rem, 7vw, 8rem);
+  --z-base: 1;
+  --z-content: 10;
+  --z-header: 40;
+  --z-atmosphere: 50;
+  --z-cursor: 140;
+  --z-modal: 100;
+  --z-intro: 120;
+}

@@ -1,0 +1,202 @@
+@media (max-width: 1023px) {
+  .hero-layout {
+    grid-template-columns: minmax(10rem, 0.7fr) minmax(15rem, 1fr);
+  }
+
+  .hero-details {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: end;
+    gap: 1.5rem;
+    padding-top: 0;
+  }
+
+  .hero-details .detail-label,
+  .detail-copy {
+    margin-top: 0;
+  }
+
+  .detail-age {
+    font-size: 5rem;
+  }
+
+  .resurrection,
+  .condolences {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --gutter: 1.25rem;
+    --section-space: 6rem;
+  }
+
+  .site-header {
+    padding-top: 1rem;
+  }
+
+  .audio-label,
+  .volume-control {
+    display: none;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-topline span:last-child {
+    display: none;
+  }
+
+  .hero-layout,
+  .section-heading,
+  .ritual-header,
+  .condolences,
+  .resurrection {
+    display: block;
+  }
+
+  .hero-copy {
+    padding-bottom: 3rem;
+  }
+
+  .display-title {
+    font-size: clamp(4.2rem, 18vw, 7rem);
+  }
+
+  .hero-deck {
+    max-width: 18rem;
+  }
+
+  .hero-details {
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .detail-age {
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 5.5rem;
+  }
+
+  .detail-copy {
+    display: inline-block;
+    max-width: 12rem;
+    vertical-align: bottom;
+  }
+
+  .portrait-frame {
+    width: min(100%, 23rem);
+  }
+
+  .section-heading .eyebrow,
+  .homage-heading {
+    padding-left: 0;
+  }
+
+  .section-title {
+    margin-top: 1rem;
+    font-size: clamp(3.4rem, 16vw, 5.5rem);
+  }
+
+  .obituary-layout {
+    display: block;
+    margin-top: 4rem;
+    padding-left: 0;
+  }
+
+  .obituary-rule {
+    width: 100%;
+    height: 1px;
+    min-height: 0;
+    margin: 3rem 0;
+  }
+
+  .obituary-footer {
+    align-items: start;
+  }
+
+  .ritual-stage {
+    min-height: 33rem;
+    margin-top: 3rem;
+  }
+
+  .grave {
+    min-height: 26rem;
+  }
+
+  .flowers-field {
+    bottom: 3rem;
+    padding: 0;
+  }
+
+  .candle-row {
+    bottom: 2rem;
+    gap: 2rem;
+  }
+
+  .message-paper {
+    margin-top: 4rem;
+    box-shadow: 0.7rem 0.7rem 0 rgba(255, 255, 255, 0.04);
+  }
+
+  .condolence-intro {
+    position: static;
+  }
+
+  .condolence-list {
+    margin-top: 4rem;
+  }
+
+  .age-section {
+    display: block;
+    min-height: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .age-display {
+    min-height: 22rem;
+    margin-top: 2rem;
+  }
+
+  .age-number {
+    font-size: min(70vw, 20rem);
+  }
+
+  .age-endmark {
+    display: none;
+  }
+
+  .resurrection-console {
+    margin-top: 4rem;
+  }
+
+  .finale-word {
+    font-size: clamp(4rem, 18vw, 8rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+
+  .fog,
+  .atmosphere-grain,
+  .cursor,
+  .ash-canvas {
+    display: none;
+  }
+}

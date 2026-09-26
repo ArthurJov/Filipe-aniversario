@@ -1,0 +1,898 @@
+<!doctype html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="theme-color" content="#050505">
+
+  <meta name="description" content="Uma comemoração de aniversário dramaticamente fúnebre para os 20 anos de Filipe de Jesus 666.">
+
+  <meta name="robots" content="noindex,nofollow">
+
+  <meta property="og:title" content="Filipe de Jesus 666 — 20 anos">
+
+  <meta property="og:description" content="Em memória da juventude de Filipe. 20 anos e, contra todas as expectativas, ainda entre nós.">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:image" content="assets/images/filipe.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+
+  <title>Filipe de Jesus 666 — 20 anos</title>
+
+  <link rel="icon" href="assets/svg/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+
+  <link rel="stylesheet" href="css/variables.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/animations.css">
+
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body class="is-locked">
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <div class="cursor cursor-main" aria-hidden="true"></div>
+
+  <div class="cursor cursor-ring" aria-hidden="true"></div>
+
+  <canvas id="ash-canvas" class="ash-canvas" aria-hidden="true"></canvas>
+
+  <div class="atmosphere atmosphere-grain" aria-hidden="true"></div>
+
+  <div class="atmosphere atmosphere-vignette" aria-hidden="true"></div>
+
+  <div class="fog fog-one" aria-hidden="true"></div>
+
+  <div class="fog fog-two" aria-hidden="true"></div>
+
+  <audio id="site-song" preload="metadata" loop src="assets/audio/filipe.mp3"></audio>
+
+
+  <!-- INTRODUÇÃO -->
+
+  <section id="intro-screen" class="intro-screen" aria-labelledby="intro-title">
+
+    <div class="intro-inner">
+
+      <p class="eyebrow intro-eyebrow">Arquivo 20 / aniversário em andamento</p>
+
+      <div class="intro-photo-wrap" aria-hidden="true">
+
+        <img class="intro-photo" src="assets/images/filipe.png" alt="">
+
+      </div>
+
+      <div class="intro-copy">
+
+        <p class="intro-prelude">Em memória da juventude</p>
+
+        <h1 id="intro-title" class="intro-title">
+          Filipe de Jesus
+          <span class="secret-number" data-secret-number="true">666</span>
+        </h1>
+
+        <div class="intro-dates" aria-label="Nascido em 27 de setembro de 1967 e completando 20 anos em 27 de setembro de 2026">
+
+          <span>27/09/1967</span>
+
+          <span class="date-rule" aria-hidden="true"></span>
+
+          <span>27/09/2026</span>
+
+        </div>
+
+        <p class="intro-age">20 anos. Contra todas as expectativas.</p>
+
+      </div>
+
+      <button id="enter-button" class="button button-primary intro-button" type="button">
+
+        <span>Entrar na comemoração</span>
+
+        <span class="button-mark" aria-hidden="true">+</span>
+
+      </button>
+
+      <p class="intro-note">
+        Foi encontrado vivo em sua casa respirando.
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- FINALE -->
+
+  <div id="finale-overlay" class="finale-overlay" aria-hidden="true">
+
+    <p class="finale-kicker">registro atualizado</p>
+
+    <p class="finale-word">Sobreviveu.</p>
+
+    <p class="finale-subtitle">
+      20 anos. O funeral era só pela juventude.
+    </p>
+
+    <button id="replay-button" class="button button-light" type="button">
+      Comemorar de novo
+    </button>
+
+  </div>
+
+
+  <div id="notice" class="notice" role="status" aria-live="polite" aria-hidden="true"></div>
+
+
+  <!-- HEADER -->
+
+  <header class="site-header">
+
+    <a class="brand" href="#memorial" aria-label="Voltar ao início">
+
+      <span class="brand-symbol" aria-hidden="true">†</span>
+
+      <span>FJ 666</span>
+
+    </a>
+
+    <div class="header-controls">
+
+      <button id="audio-toggle" class="icon-button" type="button" aria-label="Ativar som" aria-pressed="false">
+
+        <span class="audio-icon" aria-hidden="true">◌</span>
+
+        <span class="audio-label">som desligado</span>
+
+      </button>
+
+      <label class="volume-control" for="volume-slider">
+
+        <span class="sr-only">Volume</span>
+
+        <input id="volume-slider" type="range" min="0" max="1" step="0.05" value="0.35">
+
+      </label>
+
+    </div>
+
+  </header>
+
+
+  <main id="conteudo" class="site-shell">
+
+
+    <!-- HERO -->
+
+    <section id="memorial" class="hero section-frame" aria-labelledby="hero-title">
+
+      <div class="hero-backdrop-word" aria-hidden="true">20</div>
+
+      <div class="hero-topline section-line">
+
+        <span>Memorial da juventude</span>
+
+        <span>Aniversário 27.09.26</span>
+
+      </div>
+
+
+      <div class="hero-layout">
+
+        <div class="hero-copy" data-reveal="from-left">
+
+          <p class="eyebrow">
+            Aniversario de Filipe 666 🙏
+          </p>
+
+          <h1 id="hero-title" class="display-title">
+            Filipe<br>
+            <em>de Jesus</em><br>
+            <span class="title-number secret-number" data-secret-number="true">666</span>
+          </h1>
+
+          <p class="hero-deck">
+            Hoje não enterramos Filipe. Apenas sua juventude.
+            Depois de 20 longos anos, ele sobreviveu mais uma vez
+            e infelizmente continuará entre nós.
+          </p>
+
+          <a class="text-link" href="#obituario">
+            Ler o obituário da juventude
+            <span aria-hidden="true">↘</span>
+          </a>
+
+        </div>
+
+
+        <figure class="hero-portrait portrait-frame" data-reveal="image">
+
+          <div class="portrait-ornament portrait-ornament-top" aria-hidden="true">✦</div>
+
+          <div class="portrait-image-wrap" data-tilt>
+
+            <img
+              src="assets/images/filipe.png"
+              alt="Filipe olhando para a câmera"
+              fetchpriority="high"
+            >
+
+            <span class="portrait-caption">
+              registro histórico<br>
+              de quando era mais jovem
+            </span>
+
+          </div>
+
+          <figcaption class="portrait-meta">
+
+            <span>Filipe de Jesus Oliveira</span>
+
+            <span>arquivo nº 20</span>
+
+          </figcaption>
+
+        </figure>
+
+
+        <div class="hero-details" data-reveal="from-right">
+
+          <div class="date-stack">
+
+            <span class="date-year">2002</span>
+
+            <span class="date-dash" aria-hidden="true">—</span>
+
+            <span class="date-year">2026</span>
+
+          </div>
+
+          <p class="detail-label">
+            idade oficialmente atingida
+          </p>
+
+          <p class="detail-age">20</p>
+
+          <p class="detail-copy">
+            Vinte anos de histórias, decisões questionáveis,
+            e uma vida muito safada.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-bottomline section-line">
+
+        <span>Deslize para acompanhar o enterro da juventude</span>
+
+        <span class="scroll-cue" aria-hidden="true">↓</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- OBITUÁRIO DA JUVENTUDE -->
+
+    <section id="obituario" class="obituary section-frame" aria-labelledby="obituary-title">
+
+      <div class="section-heading" data-reveal="from-left">
+
+        <p class="eyebrow">Documento comemorativo nº 20</p>
+
+        <h2 id="obituary-title" class="section-title">
+          O obituário<br>
+          <em>da juventude</em>
+        </h2>
+
+      </div>
+
+
+      <div class="obituary-layout">
+
+        <div class="obituary-column obituary-lead" data-reveal="up">
+
+          <span class="column-number" aria-hidden="true">01</span>
+
+          <p class="lead-text">
+            Aos 20 anos, Filipe de Jesus 666 se despede oficialmente
+            de mais um ano de juventude, deixando para trás memórias,
+            decisões suspeitas.
+          </p>
+
+          <p class="body-copy">
+            Nascido em 27 de setembro de 67, Filipe chega ao dia
+            27 de setembro de 2026 ainda vivo, funcional e pronto para
+            comemorar. A juventude, por outro lado, apresenta sinais
+            preocupantes e será devidamente homenageada neste site.
+          </p>
+
+        </div>
+
+
+        <div class="obituary-rule" aria-hidden="true"></div>
+
+
+        <div class="obituary-column obituary-facts" data-reveal="up">
+
+          <p class="fact-label">Dados incontestáveis</p>
+
+          <dl class="fact-list">
+
+            <div>
+              <dt>Nome</dt>
+              <dd>Filipe de Jesus 666</dd>
+            </div>
+
+            <div>
+              <dt>Idade</dt>
+              <dd>20 anos</dd>
+            </div>
+
+            <div>
+              <dt>Estado atual</dt>
+              <dd>vivo e aniversariando</dd>
+            </div>
+
+            <div>
+              <dt>Último paradeiro</dt>
+              <dd>perto de um bolo</dd>
+            </div>
+
+            <div>
+              <dt>Causa da cerimônia</dt>
+              <dd>aniversário</dd>
+            </div>
+
+          </dl>
+
+        </div>
+
+      </div>
+
+
+      <div class="obituary-footer" data-reveal="up">
+
+        <span class="cross-mark" aria-hidden="true">✝</span>
+
+        <p>
+          “Aproveite em paz, Seu aniversário. Filipe continua por aqui.”
+        </p>
+
+        <span class="cross-mark" aria-hidden="true">✝</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- RITUAL -->
+
+    <section id="ritual" class="ritual section-frame" aria-labelledby="ritual-title">
+
+      <div class="ritual-header" data-reveal="up">
+
+        <p class="eyebrow">Ritual de aniversário</p>
+
+        <h2 id="ritual-title" class="section-title">
+          Acenda uma vela.<br>
+          <em>É aniversário, afinal.</em>
+        </h2>
+
+      </div>
+
+
+      <div class="ritual-stage">
+
+
+        <div class="flowers-field" aria-label="Flores para homenagear a juventude perdida">
+
+          <button
+            class="flower flower-one"
+            type="button"
+            data-flower
+            aria-label="Colocar flor branca"
+          >
+            <span aria-hidden="true">✿</span>
+          </button>
+
+          <button
+            class="flower flower-two"
+            type="button"
+            data-flower
+            aria-label="Colocar flor cinza"
+          >
+            <span aria-hidden="true">✾</span>
+          </button>
+
+          <button
+            class="flower flower-three"
+            type="button"
+            data-flower
+            aria-label="Colocar flor escura"
+          >
+            <span aria-hidden="true">❀</span>
+          </button>
+
+        </div>
+
+
+        <div class="grave-wrap" data-reveal="grave">
+
+          <button
+            id="grave"
+            class="grave"
+            type="button"
+            aria-describedby="grave-hint"
+            aria-label="Lápide interativa em homenagem à juventude de Filipe"
+          >
+
+            <span class="grave-cross" aria-hidden="true">†</span>
+
+            <span class="grave-name">
+              JUVENTUDE<br>
+              DE FILIPE
+            </span>
+
+            <span class="grave-rule" aria-hidden="true"></span>
+
+            <span class="grave-years">1967 — 2026</span>
+
+            <span id="grave-epitaph" class="grave-epitaph">
+              20 anos e ainda entre nós
+            </span>
+
+            <span class="grave-shine" aria-hidden="true"></span>
+
+          </button>
+
+          <p id="grave-hint" class="grave-hint">
+            Toque na lápide. A juventude talvez responda.
+          </p>
+
+          <div id="placed-flowers" class="placed-flowers" aria-hidden="true"></div>
+
+        </div>
+
+
+        <div class="candle-row" aria-label="Velas de aniversário interativas">
+
+          <button
+            class="candle candle-small"
+            type="button"
+            data-candle
+            aria-label="Apagar vela de aniversário 1"
+          >
+
+            <span class="candle-flame" aria-hidden="true"></span>
+            <span class="candle-wick" aria-hidden="true"></span>
+            <span class="candle-body" aria-hidden="true"></span>
+            <span class="candle-smoke" aria-hidden="true"></span>
+
+          </button>
+
+
+          <button
+            class="candle"
+            type="button"
+            data-candle
+            aria-label="Apagar vela de aniversário 2"
+          >
+
+            <span class="candle-flame" aria-hidden="true"></span>
+            <span class="candle-wick" aria-hidden="true"></span>
+            <span class="candle-body" aria-hidden="true"></span>
+            <span class="candle-smoke" aria-hidden="true"></span>
+
+          </button>
+
+
+          <button
+            class="candle candle-tall"
+            type="button"
+            data-candle
+            aria-label="Apagar vela de aniversário 3"
+          >
+
+            <span class="candle-flame" aria-hidden="true"></span>
+            <span class="candle-wick" aria-hidden="true"></span>
+            <span class="candle-body" aria-hidden="true"></span>
+            <span class="candle-smoke" aria-hidden="true"></span>
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <p class="ritual-status" id="candle-status" role="status">
+        3 velas acesas. Faça um pedido antes que a idade pese.
+      </p>
+
+    </section>
+
+
+    <!-- MENSAGEM ORIGINAL -->
+
+    <section id="homenagem" class="homage section-frame" aria-labelledby="homage-title">
+
+      <div class="section-heading homage-heading" data-reveal="from-left">
+
+        <p class="eyebrow">Mensagem oficial de aniversário</p>
+
+        <h2 id="homage-title" class="section-title">
+          Algumas<br>
+          <em>palavras</em>
+        </h2>
+
+      </div>
+
+
+      <div
+        id="message-content"
+        class="message-paper"
+        data-reveal="paper"
+        aria-live="polite"
+      >
+
+        <p class="message-pending">Claro! Aqui vai uma mensagem natural, carinhosa e sem ficar exageradamente formal:
+
+"Feliz aniversário, [NOME DO AMIGO]! 🎉🥳"
+
+Passando aqui pra te desejar tudo de melhor nesse novo ciclo! Que não faltem saúde, felicidade, paz, sucesso e muitos momentos bons. Espero que você consiga realizar seus objetivos e que esse novo ano da sua vida seja cheio de coisas boas!
+
+[COLOQUE AQUI ALGO PESSOAL SOBRE A PESSOA — ex.: “Espero que continue sendo essa pessoa gente boa de sempre” / “Foi muito bom te conhecer e compartilhar tantos momentos contigo”]
+
+Aproveita muito seu dia e curta bastante! Parabéns, [NOME DO AMIGO]! 🎂🎉 Tamo junto! 🤝</p>
+
+      </div>
+
+
+      <div class="message-signature" data-reveal="up">
+
+        <span class="signature-rule" aria-hidden="true"></span>
+
+        <span>Levei muito tempo para escrever esse texto</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONDOLÊNCIAS À JUVENTUDE -->
+
+    <section
+      id="condolencias"
+      class="condolences section-frame"
+      aria-labelledby="condolences-title"
+    >
+
+      <div class="condolence-intro" data-reveal="from-left">
+
+        <p class="eyebrow">Livro de condolências à juventude</p>
+
+        <h2 id="condolences-title" class="section-title">
+          Deixe algumas<br>
+          <em>palavras dramáticas</em>
+        </h2>
+
+        <p class="body-copy">
+          Filipe está perfeitamente vivo. A juventude é que está ficando
+          cada vez mais difícil de defender. Deixe sua homenagem aos
+          gloriosos primeiros 20 anos.
+        </p>
+
+        <button
+          id="open-condolence"
+          class="button button-outline"
+          type="button"
+        >
+          Assinar o livro
+          <span aria-hidden="true">↗</span>
+        </button>
+
+      </div>
+
+
+      <div id="condolence-list" class="condolence-list" aria-live="polite">
+      </div>
+
+    </section>
+
+
+    <!-- IDADE -->
+
+    <section id="idade" class="age-section section-frame" aria-labelledby="age-title">
+
+      <div class="age-aside" data-reveal="from-left">
+
+        <p class="eyebrow">Registro numérico</p>
+
+        <p class="body-copy">
+          Vinte anos de existência comprovada.
+          Está durando mais do que o esperado.
+        </p>
+
+        <!--
+          O nome técnico data-hidden-27 foi mantido para não quebrar
+          o JavaScript existente. O valor visual correto agora é 20.
+        -->
+        <span
+          class="hidden-27"
+          data-hidden-27
+          tabindex="0"
+          role="button"
+          aria-label="Número secreto 20"
+        >20</span>
+
+      </div>
+
+
+      <div class="age-display" data-reveal="number">
+
+        <span id="age-number" class="age-number">0</span>
+
+        <span id="age-title" class="age-label">anos</span>
+
+      </div>
+
+
+      <div class="age-endmark" aria-hidden="true">
+        20<br>
+        ·<br>
+        20
+      </div>
+
+    </section>
+
+
+    <!-- PROTOCOLO DE REJUVENESCIMENTO -->
+
+    <section
+      id="ressurreicao"
+      class="resurrection section-frame"
+      aria-labelledby="resurrection-title"
+    >
+
+      <div class="resurrection-intro" data-reveal="up">
+
+        <p class="eyebrow">Protocolo de emergência</p>
+
+        <h2 id="resurrection-title" class="section-title">
+          Recuperar a<br>
+          <em>juventude</em>
+        </h2>
+
+        <p class="body-copy">
+          Filipe fez 20 anos. A situação é grave.
+          Clique repetidamente para tentar recuperar
+          alguns anos de juventude.
+        </p>
+
+      </div>
+
+
+      <div class="resurrection-console" data-reveal="console">
+
+        <div class="progress-meta">
+
+          <span>tentativa de rejuvenescimento</span>
+
+          <span id="resurrection-percent">0%</span>
+
+        </div>
+
+
+        <div
+          class="progress-track"
+          role="progressbar"
+          aria-label="Progresso da tentativa de recuperar a juventude"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-valuenow="0"
+        >
+
+          <span
+            id="resurrection-progress"
+            class="progress-fill"
+          ></span>
+
+        </div>
+
+
+        <button
+          id="resurrection-action"
+          class="resurrection-button"
+          type="button"
+        >
+
+          <span class="resurrection-button-mark" aria-hidden="true">+</span>
+
+          <span>Tentar rejuvenescer</span>
+
+          <span class="resurrection-button-mark" aria-hidden="true">+</span>
+
+        </button>
+
+
+        <p
+          id="resurrection-status"
+          class="resurrection-status"
+          role="status"
+        >
+          Nenhum sinal de rejuvenescimento detectado.
+        </p>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+
+    <p>
+      Filipe de Jesus 666 · 20 anos · infelizmente ainda entre nós
+    </p>
+
+    <button
+      id="footer-secret"
+      class="footer-secret"
+      type="button"
+      aria-label="Abrir mensagem secreta"
+    >
+      20
+    </button>
+
+  </footer>
+
+
+  <!-- MODAL -->
+
+  <div id="condolence-modal" class="modal" hidden>
+
+    <div
+      class="modal-backdrop"
+      data-close-modal="true"
+    ></div>
+
+
+    <section
+      class="modal-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
+    >
+
+      <button
+        id="close-condolence"
+        class="modal-close"
+        type="button"
+        aria-label="Fechar livro"
+      >
+        ×
+      </button>
+
+
+      <p class="eyebrow">
+        Livro da juventude perdida
+      </p>
+
+      <h2 id="modal-title" class="modal-title">
+        Deixe sua homenagem
+      </h2>
+
+
+      <form id="condolence-form" novalidate>
+
+        <label for="condolence-name">
+          Nome
+        </label>
+
+        <input
+          id="condolence-name"
+          name="name"
+          type="text"
+          autocomplete="name"
+          maxlength="80"
+          required
+        >
+
+
+        <label for="condolence-message">
+          Mensagem
+        </label>
+
+        <textarea
+          id="condolence-message"
+          name="message"
+          rows="4"
+          maxlength="280"
+          required
+        ></textarea>
+
+
+        <p
+          id="form-error"
+          class="form-error"
+          role="alert"
+          hidden
+        >
+          Preencha seu nome e sua mensagem.
+        </p>
+
+
+        <button
+          class="button button-primary"
+          type="submit"
+        >
+          Registrar homenagem
+          <span aria-hidden="true">↗</span>
+        </button>
+
+      </form>
+
+
+      <p class="modal-note">
+        Sua homenagem à juventude de Filipe será guardada
+        somente neste navegador.
+      </p>
+
+    </section>
+
+  </div>
+
+
+  <!-- SCRIPTS -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+    defer
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+    defer
+  ></script>
+
+  <script src="js/app.js" defer></script>
+
+  <script src="js/animations.js" defer></script>
+
+  <script src="js/particles.js" defer></script>
+
+  <script src="js/interactions.js" defer></script>
+
+  <script src="js/minigame.js" defer></script>
+
+  <script src="js/audio.js" defer></script>
+
+</body>
+
+</html>
